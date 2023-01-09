@@ -242,7 +242,15 @@ local vmappings = {
     d = {"y:exec('r!tod -s urldecode ') . shellescape(\"<C-r>*\",1)<cr>", "decode"},
     -- d = {"<cmd>UrlEncode<cr>"}
     e = {"y:r!python3 -c 'import urllib.parse as u;print(u.quote(\"\"\"<C-r>*\"\"\".replace(\"\\%\",\"\\\\%\")))'<cr>", "encode"},
+  },
+  l = {
+    name = "odps logview",
+    -- d = {"y:r!node -e 'console.log(decodeURIComponent(escape(\"<C-r>*\".replace(\'%\',\'\\*\'))))'<cr>", "decode"},
+    -- d = {"y:exec 'r!python3 -c 'import urllib.parse as u;print(u.unquote(\"\"\"<C-r>*\"\"\"))'<cr>", "decode"},
+    -- d = {"y:r!python3 -c 'import urllib.parse as u;print(u.unquote(\"\"\"<C-r>*\"\"\".replace(\"\\%\",\"\\\\%\")))'<cr>", "decode"},
+    v = {"y:exec('r!open https://logview.aliyun.com') . shellescape(\"<C-r>*\",1)<cr>", "logview"},
   }
+
 }
 
 which_key.register(mappings, opts)

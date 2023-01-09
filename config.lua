@@ -25,3 +25,31 @@ reload "user.colorizer"
 reload "user.lualine"
 reload "user.scrollbar"
 reload "user.dadbod"
+
+-- lvim.plugins = {
+--     {
+--       "scalameta/nvim-metals",
+--       config = function()
+--         require("user.metals").config()
+--       end,
+--     },
+-- }
+
+-- dap.configurations.scala = {
+--   {
+--     type = "scala",
+--     request = "launch",
+--     name = "Run or Test Target",
+--     metals = {
+--       runType = "runOrTestFile",
+--     },
+--   },
+--   {
+--     type = "scala",
+--     request = "launch",
+--     name = "Test Target",
+--     metals = {
+--       runType = "testTarget",
+--     },
+--   },
+-- }

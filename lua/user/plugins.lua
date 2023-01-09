@@ -95,6 +95,20 @@ lvim.plugins = {
   },
   { "tpope/vim-dadbod" },
   { "kristijanhusak/vim-dadbod-ui" },
+  { "scalameta/nvim-metals", requires = { "nvim-lua/plenary.nvim" } },
+  {
+    "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup {
+        -- optional configuration
+      }
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+  },
   -- "MunifTanjim/nui.nvim",
   -- {
   --   "folke/noice.nvim",
