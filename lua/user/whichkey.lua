@@ -208,7 +208,6 @@ local m_mappings = {
   -- [";"] = { '<cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>', "Harpoon UI" },
 }
 
-
 local vopts = {
   mode = "v", -- VISUAL mode
   prefix = "<leader>",

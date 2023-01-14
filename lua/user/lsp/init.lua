@@ -11,7 +11,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "java",
 }
 
-vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "jdtls" })
+vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "jdtls" },1,1)
 
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
@@ -20,7 +20,7 @@ formatters.setup {
   { command = "shfmt", filetypes = { "sh", "zsh" } },
 }
 
-vim.lsp.set_log_level "info"
+-- vim.lsp.set_log_level "info"
 
 -- lvim.lsp.on_attach_callback = function(client, bufnr)
 -- end

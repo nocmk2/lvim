@@ -1,7 +1,6 @@
 vim.opt_local.shiftwidth = 2
 vim.opt_local.tabstop = 2
 vim.opt_local.cmdheight = 2 -- more space in the neovim command line for displaying messages
-
 local capabilities = require("lvim.lsp").common_capabilities()
 
 local status, jdtls = pcall(require, "jdtls")
@@ -71,7 +70,7 @@ local config = {
 
 		-- 💀
 		"-jar",
-		vim.fn.glob(home .. "/.local/share/nvim/mason/packages/jdtls/plugins/org.eclipse.equinox.launcher_*.jar"),
+		vim.fn.glob(home .. "/.local/share/nvim/mason/packages/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar"),
 		-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                       ^^^^^^^^^^^^^^
 		-- Must point to the                                                     Change this to
 		-- eclipse.jdt.ls installation                                           the actual version
@@ -114,6 +113,10 @@ local config = {
 			configuration = {
 				updateBuildConfiguration = "interactive",
 				runtimes = {
+          {
+						name = "JavaSE-19",
+						path = "~/.sdkman/candidates/java/19.0.1-open",
+          },
 					{
 						name = "JavaSE-11",
 						path = "~/.sdkman/candidates/java/11.0.2-open",
