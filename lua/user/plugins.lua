@@ -1,7 +1,24 @@
 -- Additional Plugins
 lvim.plugins = {
-  "ellisonleao/gruvbox.nvim",
-  "LunarVim/synthwave84.nvim",
+  -- {
+  --   "olivercederborg/poimandres.nvim",
+  --   config = function()
+  --     require("poimandres").setup {
+  --       -- leave this setup function empty for default config
+  --       -- or refer to the configuration section
+  --       -- for configuration options
+  --       bold_vert_split = false, -- use bold vertical separators
+  --       dim_nc_background = false, -- dim 'non-current' window backgrounds
+  --       disable_background = false, -- disable background
+  --       disable_float_background = false, -- disable background for floats
+  --       disable_italics = false, -- disable italics
+  --     }
+  --   end,
+  -- },
+  "glepnir/zephyr-nvim",
+  "Kenbayashi/yash.nvim",
+  "ofirgall/ofirkai.nvim",
+  { "kartikp10/noctis.nvim", requires = { "rktjmp/lush.nvim" } },
   "nvim-treesitter/playground",
   "nvim-treesitter/nvim-treesitter-textobjects",
   "christianchiarulli/nvim-ts-rainbow",
@@ -25,7 +42,7 @@ lvim.plugins = {
   -- "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
   -- "lunarvim/darkplus.nvim",
-  "lunarvim/templeos.nvim",
+  -- "lunarvim/templeos.nvim",
   "kevinhwang91/nvim-bqf",
   "is0n/jaq-nvim",
   "hrsh7th/cmp-emoji",
@@ -110,6 +127,7 @@ lvim.plugins = {
       "nvim-telescope/telescope.nvim",
     },
   },
+  "yamatsum/nvim-cursorline",
   -- "MunifTanjim/nui.nvim",
   -- {
   --   "folke/noice.nvim",

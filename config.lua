@@ -25,6 +25,7 @@ reload "user.colorizer"
 reload "user.lualine"
 reload "user.scrollbar"
 reload "user.dadbod"
+reload "user.cursorline"
 
 -- lvim.plugins = {
 --     {
