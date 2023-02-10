@@ -15,6 +15,7 @@ lvim.plugins = {
   --     }
   --   end,
   -- },
+  "iamcco/markdown-preview.nvim",
   "glepnir/zephyr-nvim",
   "Kenbayashi/yash.nvim",
   "ofirgall/ofirkai.nvim",
@@ -70,21 +71,21 @@ lvim.plugins = {
       }
     end,
   },
-  {
-    "jinh0/eyeliner.nvim",
-    config = function()
-      require("eyeliner").setup {
-        highlight_on_key = true,
-      }
-    end,
-  },
+  -- {
+  --   "jinh0/eyeliner.nvim",
+  --   config = function()
+  --     require("eyeliner").setup {
+  --       highlight_on_key = true,
+  --     }
+  --   end,
+  -- },
   { "christianchiarulli/telescope-tabs", branch = "chris" },
   "monaqa/dial.nvim",
-  {
-    "0x100101/lab.nvim",
-    run = "cd js && npm ci",
-  },
-  { "tzachar/cmp-tabnine", run = "./install.sh" },
+  -- {
+  --   "0x100101/lab.nvim",
+  --   run = "cd js && npm ci",
+  -- },
+  -- { "tzachar/cmp-tabnine", run = "./install.sh" },
   {
     "zbirenbaum/copilot.lua",
     -- event = { "VimEnter" },
@@ -113,6 +114,7 @@ lvim.plugins = {
   },
   { "tpope/vim-dadbod" },
   { "kristijanhusak/vim-dadbod-ui" },
+  { "kristijanhusak/vim-dadbod-completion" },
   -- { "scalameta/nvim-metals", requires = { "nvim-lua/plenary.nvim" } },
   {
     "jackMort/ChatGPT.nvim",
@@ -128,6 +130,7 @@ lvim.plugins = {
     },
   },
   "yamatsum/nvim-cursorline",
+  -- "hrsh7th/nvim-cmp",
   -- "MunifTanjim/nui.nvim",
   -- {
   --   "folke/noice.nvim",

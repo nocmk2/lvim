@@ -147,7 +147,8 @@ local config = {
 			format = {
 				enabled = false,
 				-- settings = {
-				--   profile = "asdf"
+    --       url = '~/Downloads/idea_java_format.xml',
+				--   profile = "idea_format"
 				-- }
 			},
 		},
