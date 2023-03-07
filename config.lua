@@ -26,6 +26,7 @@ reload "user.lualine"
 reload "user.scrollbar"
 reload "user.dadbod"
 reload "user.cursorline"
+reload "user.obsidian"
 
 -- lvim.plugins = {
 --     {

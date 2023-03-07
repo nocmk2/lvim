@@ -29,6 +29,7 @@ lvim.plugins = {
   --     require("telescope").load_extension "laravel"
   --   end,
   -- },
+  "gpanders/editorconfig.nvim",
   "iamcco/markdown-preview.nvim",
   "glepnir/zephyr-nvim",
   "Kenbayashi/yash.nvim",
@@ -144,6 +145,7 @@ lvim.plugins = {
     },
   },
   "yamatsum/nvim-cursorline",
+  "epwalsh/obsidian.nvim"
   -- "hrsh7th/nvim-cmp",
   -- "MunifTanjim/nui.nvim",
   -- {
