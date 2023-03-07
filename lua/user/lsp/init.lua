@@ -15,10 +15,12 @@ vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "jdtls" },1,
 
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
-  -- { command = "google_java_format", filetypes = { "java" } },
+  { command = "uncrustify", filetypes = { "java" } },
   { command = "stylua", filetypes = { "lua" } },
   { command = "shfmt", filetypes = { "sh", "zsh" } },
 }
+
+
 
 -- vim.lsp.set_log_level "info"
 
@@ -27,5 +29,5 @@ formatters.setup {
 
 -- local linters = require "lvim.lsp.null-ls.linters"
 -- linters.setup {
---   { command = "eslint_d", filetypes = { "javascript" } },
+--   { command = "npm_groovy_lint", filetypes = { "java" } },
 -- }
